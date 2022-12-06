@@ -51,13 +51,56 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <strong>Navegador:</strong>
-                                            <input type="text" name="navegador" id="navegador" class="form-control input-sm" placeholder="Navegador" value="{{$visitante->navegador}}" required>
+                                            <select name="navegador" id="navegador" class="form-control input-sm" placeholder="Navegador" required>
+                                                <option value="{{$visitante->navegador}}">{{$visitante->navegador}}</option>
+                                                @if($visitante->navegador != "Internet Explorer")
+                                                    <option value="Internet Explorer">Internet Explorer</option>
+                                                @endif
+                                                @if($visitante->navegador != "Chrome")
+                                                    <option value="Chrome">Chrome</option>
+                                                @endif
+                                                @if($visitante->navegador != "Firefox")
+                                                    <option value="Firefox">Firefox</option>
+                                                @endif
+                                                @if($visitante->navegador != "Safari")
+                                                    <option value="Safari">Safari</option>
+                                                @endif
+                                                @if($visitante->navegador != "Opera")
+                                                    <option value="Opera">Opera</option>
+                                                @endif
+                                                @if($visitante->navegador != "Edge")
+                                                    <option value="Edge">Edge</option>
+                                                @endif
+                                                @if($visitante->navegador != "Otros")
+                                                    <option value="Otros">Otros</option>
+                                                @endif
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <strong>Sistema Operativo:</strong>
-                                            <input type="text" name="sistema_operativo" id="sistema_operativo" class="form-control input-sm" placeholder="Sistema Operativo" value="{{$visitante->sistema_operativo}}" required>
+                                            <select name="sistema_operativo" id="sistema_operativo" class="form-control input-sm" placeholder="Sistema Operativo" required>
+                                                <option value="{{$visitante->sistema_operativo}}">{{$visitante->sistema_operativo}}</option>
+                                                @if($visitante->sistema_operativo != "Windows")
+                                                    <option value="Windows">Windows</option>
+                                                @endif
+                                                @if($visitante->sistema_operativo != "Mac OS")
+                                                    <option value="Mac OS">Mac OS</option>
+                                                @endif
+                                                @if($visitante->sistema_operativo != "Linux")
+                                                    <option value="Linux">Linux</option>
+                                                @endif
+                                                @if($visitante->sistema_operativo != "Android")
+                                                    <option value="Android">Android</option>
+                                                @endif
+                                                @if($visitante->sistema_operativo != "iOS")
+                                                    <option value="iOS">iOS</option>
+                                                @endif
+                                                @if($visitante->sistema_operativo != "Otros")
+                                                    <option value="Otros">Otros</option>
+                                                @endif
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">

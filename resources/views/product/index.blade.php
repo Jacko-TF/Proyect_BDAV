@@ -40,6 +40,7 @@
                    <input name="_method" type="hidden" value="DELETE">
 
                    <button class="btn btn-danger btn-xs" type="submit">Eliminar</button>
+                  </form>
                  </td>
                </tr>
                @endforeach 

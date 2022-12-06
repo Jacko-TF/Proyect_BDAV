@@ -8,11 +8,10 @@
 
 @section('content')
     <div class="pull-right">
-        <a class="btn btn-primary" href="{{ route('visitante.create') }}"> Crear nuevo visitante</a>
+        <a class="btn btn-success" href="{{ route('visitante.create') }}"> Añadir nuevo visitante</a>
     </div>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped mt-3">
         <tr>
-            <th>ID</th>
             <th>Hora</th>
             <th>Fecha</th>
             <th>Duracion Minutos</th>
@@ -21,11 +20,10 @@
             <th>Sistema Operativo</th>
             <th>Pais</th>
             <th>Ciudad</th>
-            <th width="280px">Acciones</th>
+            <th colspan="2">Acciones</th>
         </tr>
         @foreach ($visitantes as $visitante)
         <tr>
-            <td>{{ $visitante->visitante_id }}</td>
             <td>{{ $visitante->hora }}</td>
             <td>{{ $visitante->fecha }}</td>
             <td>{{ $visitante->duracion_minutos }}</td>

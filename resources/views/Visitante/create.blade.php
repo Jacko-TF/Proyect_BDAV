@@ -49,13 +49,27 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <strong>Navegador:</strong>
-                                            <input type="text" name="navegador" id="navegador" class="form-control input-sm" placeholder="Navegador" required>
+                                            <select name="navegador" id="navegador" class="form-control input-sm" required>
+                                                <option value="Chrome">Chrome</option>
+                                                <option value="Firefox">Firefox</option>
+                                                <option value="Safari">Safari</option>
+                                                <option value="Opera">Opera</option>
+                                                <option value="Edge">Edge</option>
+                                                <option value="Otros">Otro</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <strong>Sistema Operativo:</strong>
-                                            <input type="text" name="sistema_operativo" id="sistema_operativo" class="form-control input-sm" placeholder="Sistema Operativo" required>
+                                            <select name="sistema_operativo" id="sistema_operativo" class="form-control input-sm" required>
+                                                <option value="Windows">Windows</option>
+                                                <option value="Linux">Linux</option>
+                                                <option value="Mac OS">Mac OS</option>
+                                                <option value="Android">Android</option>
+                                                <option value="iOS">iOS</option>
+                                                <option value="Otros">Otro</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">
