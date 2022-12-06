@@ -1,0 +1,10 @@
+<?php
+
+use App\Http\Controllers\ProductController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/products', 'ProductController@index');
+Route::post('/product/update/{id}', 'ProductController@update');
+Route::resource('product', 'App\Http\Controllers\ProductController');
+
